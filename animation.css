@@ -1,0 +1,34 @@
+ .knight img{
+   
+    height: 60px;
+    width: 60px;
+    
+
+    animation: knightwalk 3s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes knightwalk {
+    0%{
+
+        content: url(./knight/sticker1.webp);
+    }
+    25%{
+        content: url(./knight/sticker2.webp);
+    }
+    50%{
+        content: url(./knight/sticker3.webp);
+    }
+    75%{
+        content: url(./knight/sticker4.webp);
+    }
+    100%{
+        content: url(./knight/sticker1.webp);
+    }
+}
+.containerx{
+    border: solid red;
+}
+.anibox{
+     border: solid rgb(0, 157, 255);
+}
