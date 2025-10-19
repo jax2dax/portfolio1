@@ -40,6 +40,10 @@
     padding:0;
     box-sizing: border-box;
     text-decoration: none;
+    /*IMPORTED FONT*/
+            font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-style: normal;
  
    
 }
@@ -253,6 +257,7 @@ nav .right a:hover {
         background-color: transparent;
     
 }
+   
 .skillssection .cells {
     display: flex;
     justify-content: center;
@@ -281,26 +286,82 @@ nav .right a:hover {
        
 
     } /*NOT WORKING PORTION*/
-            .htmlskill:hover  {
-                border: solid 10px rgb(226, 82, 15);
-                color:green
-
-            }
-            .cell.css:hover , .cell.react:hover {
-                border: solid 2px rgb(15, 103, 226);
-            }
-            .cell:hover .js, .cell.java:hover{
-                border: solid 2px rgb(230, 198, 198);
-            }
-            .cell:hover .n8n, .python, .express{
-                border: solid 2px rgb(0, 0, 0);
-            }
             
+             .skillssection .cells .css:hover  {
+                border: solid 2px rgb(15, 103, 226);
+                background-color:rgb(6, 6, 58);
+            } 
+            .skillssection .cells .react:hover{
+                 border: solid 2px rgb(15, 103, 226);
+                 background-color:rgb(6, 6, 58);
+            }
+            .skillssection .cells .java:hover{
+                border: solid 2px rgb(204, 100, 9);
+                 background-color: rgb(16, 20, 38);
+            }
+            .skillssection .cells .js:hover{
+                border: solid 2px rgb(232, 227, 227);
+               
+            }
+            .skillssection .cells .n8n:hover{
+                border: solid 2px rgb(0, 0, 0);
+                
+            }
+           .skillssection .cells .python:hover{
+                border: solid 3px rgb(255, 247, 10);
+                 background-color: rgb(44, 37, 146);
+            }
+            .skillssection .cells .node:hover{
+                border: solid 2px rgb(16, 162, 24);
+                 background-color: rgb(9, 32, 2);
+            }
+            .skillssection .cells .express:hover{
+                border: solid 2px rgb(35, 33, 33);
+                 background-color: rgb(107, 107, 107);
+                
+            }
+            .skillssection .cells .mongo:hover{
+                border: solid 2px rgb(16, 162, 24);
+                 background-color: rgb(9, 32, 2);
+            }
+
+            .skillssection .cells .htmlskill:hover{
+                border: solid 3px rgb(226, 82, 15);
+                background-color:rgb(167, 101, 20); 
+            }
+            .skillssection .cells .git:hover{
+                border: solid 2px rgb(223, 105, 8);
+                 background-color: rgb(0, 0, 0);
+            }
+             .skillssection .cells .blender:hover{
+                border: solid 2px rgb(204, 100, 9);
+                 background-color: rgb(36, 26, 121);
+            }
+            .skillssection .cells .three:hover{
+                border: solid 3px rgb(197, 197, 197);
+                 background-color: rgb(0, 0, 0);
+            }
+            .skillssection .cells .brain:hover{
+                border: solid 3px rgb(218, 195, 18);
+                 background-color: rgb(51, 40, 0);
+            }
+            .skillssection .cells .tensorflow:hover{
+                border: solid 3px rgb(251, 105, 0);
+                 background-color: rgb(32, 27, 0);
+            }
+
      .cell:hover .reactlogo{
          animation: spin-cell-image 10s linear infinite;
          
+         
     }
+  
+.brainlogo{
+    height:46px;
+    width:57px;
     
+}
+
 
     @keyframes spin-cell-image{
         0%{
@@ -319,6 +380,14 @@ nav .right a:hover {
         }
     }
     
+ .skillssection .cells-2{
+    margin-top:100px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(126, 65, 134, 0.107);
+    
+  
+ }
+ 
 .skillssection .cells .cell{/*touching*/
         
 
@@ -378,11 +447,92 @@ nav .right a:hover {
     filter: drop-shadow(0 0 0.75rem var(--glow-color));
   }
     
-
-/* SECTION - 3 TEstimony */
-.boycodeimg{
-   
+.react{
+   width:60px;
+   color:red;
+   background-color:red;
 }
+/* SECTION - 3 TEstimony */
+
+.slot-container{
+     display: flex;
+     flex:2;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 60px 30px;
+    width:clamp(300px,700px,90vw);
+    padding: 50px 90px;
+    border-radius: 10px;
+    background-color:var(--bgc);  /* makes the background transparent and , background filter caan be displayd */
+    backdrop-filter: blur(18px);
+    background-color: rgba(68, 27, 99, 0.468);
+    align-self: center;
+    justify-self: center;
+    margin: 80px;
+    
+}
+.slot{
+    width:90%;
+    border-radius: 20px;
+    background-color:rgba(82, 7, 107, 0.822);
+
+}
+.testimonysection .group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .projects{
+        object-fit: contain;
+        display: flex;
+        width:clamp(400px,40%,50%);
+        justify-content: center;
+        justify-self: center;
+        flex:3;
+        
+        flex-direction:column;
+        background-color: black;
+        border:solid 4px rgb(65, 65, 65);
+        padding:30px
+    }
+        .project-intro{
+            flex:1;
+            background-image:linear-gradient(90deg,black,rgb(68, 68, 68), black ,rgb(76, 76, 76) , black)
+        }
+        .projects .project-visuals{
+            object-fit: contain;
+            flex:9;
+            display:flex;
+            flex-direction: row;
+            background-image: linear-gradient(30deg, rgb(40, 1, 117),red,rgb(82, 0, 82));
+            overflow-x: scroll;
+            gap: 30px;
+        }
+        .project-visuals .vids{
+            width:300px;
+           
+        }
+        .project-imgs{
+            object-fit:contain;
+            width: 100%;
+
+        }       .construction img{width:    clamp(200px,100%,300px);margin-top: 100px;}
+
+         
+                
+                        
+.projects .bg-separator{
+    border-radius:5px;
+    border:solid 4px gray;
+    background-color:black;
+}
+
+
+
+
+
+
 /* ICON style */
 .icons{
     height: 18px;
@@ -456,6 +606,12 @@ nav .right a:hover {
     }
     .skillssection .cells .cell span {
         font-size: 16px;
+    }
+    .projects{
+        flex-direction:column;
+    }
+    .testimonysection .groups{
+        flex-direction:column;
     }
 }
 
@@ -560,22 +716,3 @@ nav .right a:hover {
 }
 
 /*//////////////////tempo///////////////////*/
-.majorproject{
-    margin: 30px;
-    margin-bottom: 130px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    width: 400px;
-    background-image: linear-gradient(120deg,  rgb(101, 58, 20), rgb(67, 63, 24),rgb(196, 205, 19));
-    border-radius: 10px;
-}
- .majorproject:hover{
-   box-shadow: 0 0 20px rgb(179, 255, 0);
-   background-image: linear-gradient(120deg,  rgb(70, 83, 65), rgb(53, 68, 24),rgb(184, 184, 164));
-
- }
